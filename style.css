@@ -1,0 +1,194 @@
+a{
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+    font-family: 'Roboto', sans-serif;
+}
+/* TOP */
+#top ul{
+    position: fixed;
+    display: block;
+    top: 1em;
+    right: 0;
+}
+#top ul li{
+    display: inline-block;
+    padding: 0.5em;
+}
+#top ul li:nth-child(3){
+  padding-right: 2em;
+}
+#top ul li:nth-child(4)>a>img{
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+}
+/* CONTENT */
+#content{
+    width: 77vw;
+    margin: auto;
+}
+#content img{
+    display: block;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+#content .tabs{
+    width: 1000px;
+}
+#content .tabs li{
+    display: inline-block;
+    width: 100px;
+    padding: calc( 70vw / 20 ) calc( 70vw/ 20 );
+    margin: 1vw auto;
+}
+#content .tabs li i,
+#content .tabs li span{
+    display: block;
+    text-align: center;
+    font-size: 2.5em;
+}
+#content .tabs li:nth-child(1):hover,
+#content .tabs li:nth-child(2):hover,
+#content .tabs li:nth-child(3):hover,
+#content .tabs li:nth-child(4):hover,
+#content .tabs li:nth-child(5):hover,
+#content .tabs li:nth-child(6):hover,
+#content .tabs li:nth-child(7):hover,
+#content .tabs li:nth-child(8):hover,
+#content .tabs li:nth-child(9):hover,
+#content .tabs li:nth-child(10):hover{
+    transition-delay: 350ms;
+    background-color: #dfe1e5;
+}
+#content .tabs li:nth-child(1):hover:after,
+#content .tabs li:nth-child(2):hover:after,
+#content .tabs li:nth-child(3):hover:after,
+#content .tabs li:nth-child(4):hover:after,
+#content .tabs li:nth-child(5):hover:after,
+#content .tabs li:nth-child(6):hover:after,
+#content .tabs li:nth-child(7):hover:after,
+#content .tabs li:nth-child(8):hover:after,
+#content .tabs li:nth-child(9):hover:after,
+#content .tabs li:nth-child(10):hover:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f142";
+    position: absolute;
+    font-size: 1.25em;
+    margin: -4.7em 0.3em 0 6.3em;
+    color: #777;
+}
+#content .tabs li:nth-child(1) i{
+    color: rgb(37, 37, 223);
+}
+#content .tabs li:nth-child(2) i{
+    color: #000;
+}
+#content .tabs li:nth-child(3) i{
+    color: rgba(255, 0, 0, 0.712);
+}
+#content .tabs li:nth-child(4) i{
+    color: rgb(50, 200, 250);
+}
+#content .tabs li:nth-child(5) i{
+    color: #000;
+}
+#content .tabs li:nth-child(6) i{
+    color: rgb(255, 255, 0);
+}
+#content .tabs li:nth-child(7) i{
+    color: rgb(25, 115, 231);
+}
+#content .tabs li:nth-child(8) i{
+    color: orangered;
+}
+#content .tabs li:nth-child(9) i{
+    color: rgb(27, 141, 212);
+}
+#content .tabs li:nth-child(10) i{
+    color: lightgreen;
+}
+#content .tabs li i{
+    padding-bottom: 0.2em;
+}
+#content .tabs li span{
+    font-size: 1em;
+}
+/* SEARCHE */
+fieldset{
+    width: 50vw;
+    height: 40px;
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    margin: 2em auto 0 auto;
+}
+fieldset>label>span>i{
+    font-size: 1.2em;
+    color: #bbbbbb;
+    margin: 10px;
+}
+fieldset input{
+    width: 43vw;
+    height: 35px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-size: 17px;
+}
+.mic{
+    display: inline-block;
+    background: url(//www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
+    background-size: 30px;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    margin: 0 0.3em 0.3em 0.3em;
+}
+/* BOTTOM */
+#bottom{
+    width: 7em;
+    height: 2.5em;
+    position: fixed;
+    right: 1.5em;
+    bottom: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+}
+#bottom>ul>li>a{
+    color: rgb(25, 115, 231);
+}
+#bottom>ul>li>a>i{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+}
+/* ADAPTIVE */
+@media screen and (max-width: 915px){
+    #content .tabs li{
+        padding: calc( 70vw / 20 ) calc( 70vw/ 15 );
+        margin: 2vw auto;
+    }
+    #content .tabs li:nth-child(9),
+    #content .tabs li:nth-child(10){
+        display: none;
+    }
+}
+@media screen and (max-width: 700px){
+    #content .tabs li{
+        padding: calc( 70vw / 20 ) calc( 70vw/ 15 );
+        margin: 2vw auto;
+    }
+    #content .tabs li:nth-child(7),
+    #content .tabs li:nth-child(8){
+        display: none;
+    }
+}
